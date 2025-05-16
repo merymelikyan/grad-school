@@ -1,0 +1,24 @@
+{% load static %}
+
+<section class="features">
+    <div class="container">
+      <div class="row">
+        {% for feature in features %}
+          <div class="col-lg-4 col-12">
+            <div class="features-post">
+              <div class="features-content">
+                <div class="content-show">
+                  <h4><i class="{{feature.icon_class}}"></i>{{feature.title}}</h4>
+                </div>
+                <div class="content-hide">
+                  <p>{{feature.description1}}</p>
+                  <p class="hidden-sm">{{feature.description2}}</p>
+                  <div class="scroll-to-section"><a href="{{feature.link_url}}">{{feature.link_name}}</a></div>
+              </div>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>

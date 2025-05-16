@@ -1,0 +1,17 @@
+{% load static %}
+
+<section class="section main-banner" id="top" data-section="section1">
+    <video autoplay muted loop id="bg-video">
+        <source src="{{main_banner.video_file.url}}" type="video/mp4" />
+    </video>
+
+    <div class="video-overlay header-text">
+        <div class="caption">
+            <h6>{{main_banner.title}}</h6>
+            <h2><em>{{main_banner.text1}}</em> {{main_banner.text2}}</h2>
+            <div class="main-button">
+                <div class="scroll-to-section"><a href="{{main_banner.link_url}}">{{main_banner.link_name}}</a></div>
+            </div>
+        </div>
+    </div>
+</section> 

@@ -1,0 +1,28 @@
+{% load static %}
+
+<section class="section video" data-section="section5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 align-self-center">
+          <div class="left-content">
+            <span>{{section_video.tag}}</span>
+            <h4>{{section_video.title1}} <em>{{section_video.title2}}</em></h4>
+            <p>{{section_video.description1}}<a rel="nofollow" href="{{section_video.link_url1}}" target="_parent">{{section_video.link_name1}}</a> {{section_video.description2}}
+            <br><br>{{section_video.description3}}</p>
+            <div class="main-button"><a rel="nofollow" href="{{section_video.link_url2}}" target="_parent">{{section_video.link_name2}}</a></div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <article class="video-item">
+            <div class="video-caption">
+              <h4>{{section_video.video_name}}</h4>
+            </div>
+            <figure>
+              <a href="{{section_video.video_url}}" class="play">
+                <img src="{{section_video.image.url}}"></a>
+            </figure>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
